@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "students"
+version = "0.1.0"
+description = ""
+authors = ["naveed-rana <rana.naveed812@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.1"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+pymongo = "^4.6.3"
+
+[tool.poetry.scripts]
+dev= "students.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
